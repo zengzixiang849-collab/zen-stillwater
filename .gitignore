@@ -1,0 +1,14 @@
+/assets/
+/audio/
+/materials/
+/index.html
+/favicon.svg
+/lake.jpg
+/*.png
+/patch_bundle.py
+/polish_bundle.py
+/shorten_label.py
+/validate-site.cjs
+/site-deploy.tar.gz
+/dist/audio/music/
+/prepare_github.py

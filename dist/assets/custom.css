@@ -1,0 +1,39 @@
+.email-link {
+  align-self: center;
+  border-bottom: 1px solid rgba(238, 231, 213, 0.27);
+  padding-bottom: 7px;
+  font: 12px var(--sans);
+  letter-spacing: 0.4px;
+  opacity: 0.78;
+}
+
+.email-link:hover {
+  opacity: 1;
+}
+
+@media (max-width: 700px) {
+  .side-nav {
+    top: 51%;
+  }
+
+  .sound-player {
+    top: 32%;
+  }
+
+  .track-subtitle {
+    max-width: 130px;
+    text-align: right;
+    font-size: 8px;
+    letter-spacing: 1.2px;
+  }
+
+  .about-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .email-link {
+    font-size: 11px;
+  }
+}
