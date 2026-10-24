@@ -1,0 +1,4 @@
+interface:
+  display_name: "建筑日光研究"
+  short_description: "创建随时间与地点变化的建筑光影交互展示"
+  default_prompt: "Use $architectural-daylight-study to turn my building model into an interactive dawn-to-dusk shadow study for a portfolio website."

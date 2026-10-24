@@ -1,0 +1,25 @@
+{
+  "model": "./models/building.glb",
+  "mode": "geographic",
+  "northOffsetDeg": 12,
+  "location": {
+    "label": "Phoenix, Arizona",
+    "latitude": 33.4484,
+    "longitude": -112.074,
+    "timezone": "America/Phoenix"
+  },
+  "date": "2026-06-21",
+  "timeRange": ["06:00", "19:30"],
+  "presets": [
+    { "id": "dawn", "label": "Dawn", "time": "06:15" },
+    { "id": "morning", "label": "Morning", "time": "09:00" },
+    { "id": "noon", "label": "Solar noon", "time": "12:30" },
+    { "id": "golden", "label": "Golden hour", "time": "18:30" }
+  ],
+  "shadow": {
+    "mapSize": 2048,
+    "normalBias": 0.02,
+    "cameraPadding": 1.25
+  }
+}
+
