@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="theme-color" content="#172f37"/>
+  <meta name="description" content="Zen 的建筑光影实验：在海口世纪大桥的水面上，缓缓走过一天。拖动时间，观察桥、光与海的变化。"/>
+  <title>世纪 · 光 — Century Light by Zen</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%231a333a'/%3E%3Ctext x='12' y='35' font-family='serif' font-size='34' fill='%23eee5d2'%3Ez%3C/text%3E%3C/svg%3E"/>
+</head>
+<body>
+  <main id="experience" aria-label="海口世纪大桥光影研究">
+    <img id="poster" src="./poster.jpg" alt="暖色夕光下的海口世纪大桥三维模型和海面倒影"/>
+    <div id="scene" aria-label="世纪大桥交互三维场景"></div>
+    <div class="scrim" aria-hidden="true"></div>
+    <header class="chrome topbar">
+      <a class="brand" href="../" aria-label="返回 Zen 的个人网站">Zen<span>.</span></a>
+      <span class="edition">FIELD NOTES <i></i> 001</span>
+      <button id="about" class="text-button">关于这次观察 <span aria-hidden="true">↗</span></button>
+    </header>
+    <section class="chrome heading" aria-labelledby="title">
+      <p class="eyebrow">HAIKOU · HAINAN ISLAND</p>
+      <h1 id="title">世纪<span> · </span>光</h1>
+      <p class="english-title">A bridge. A sea. A passing day.</p>
+      <p class="intro">让时间经过，看见光留下的形状。</p>
+    </section>
+    <aside class="chrome place"><span class="place-dot"></span><span>世纪大桥 / 海甸河入海口<br><small>20.0518° N &nbsp; 110.3156° E</small></span></aside>
+    <div id="loading" role="status"><span class="loading-line"></span><span id="load-copy">正在迎接第一束光</span></div>
+    <p id="fallback" hidden role="status">当前显示静态光影画面。此设备暂时无法运行三维场景。</p>
+    <section class="chrome observation" aria-label="当前光线状态">
+      <span class="small-label">THE LIGHT NOW</span>
+      <p id="mood">余晖入海</p><p id="mood-note">桥的线条，慢慢染上温度。</p>
+    </section>
+    <div class="chrome view-tools" role="group" aria-label="场景工具">
+      <button id="view" class="tool" title="切换观察视角" aria-label="切换观察视角">视角 <span id="view-label">01</span></button>
+      <button id="sea" class="tool" aria-pressed="true" title="暂停海面动态">海面 <span id="sea-label">流动</span></button>
+      <button id="capture" class="tool" title="保存当前画面">留住此刻 <span aria-hidden="true">↓</span></button>
+      <button id="hide" class="tool" aria-label="隐藏界面，沉浸观看">纯净视野 <span aria-hidden="true">⌑</span></button>
+    </div>
+    <section class="chrome timeline" aria-label="时光控制台">
+      <div class="timeline-head">
+        <div class="clock-group"><output id="clock" for="time">17:42</output><span class="timezone">HAIKOU LOCAL TIME<br>UTC +08:00</span></div>
+        <div class="presets" role="group" aria-label="选择光影时刻">
+          <button data-moment="dawn">晨光</button><button data-moment="noon">正午</button><button data-moment="golden" class="selected">金色时刻</button><button data-moment="blue">蓝调</button>
+        </div>
+        <button id="play" aria-label="播放一天的光影" aria-pressed="false"><span id="play-icon" aria-hidden="true">▷</span><span id="play-label">让时间流动</span></button>
+      </div>
+      <label class="sr-only" for="time">海口当地时间</label>
+      <div class="slider-wrap"><input id="time" type="range" min="300" max="1230" value="1062" step="1" aria-valuetext="17点42分"/><div class="ticks" aria-hidden="true"><span>05:00</span><span>08:00</span><span>11:00</span><span>14:00</span><span>17:00</span><span>20:30</span></div></div>
+      <div class="timeline-foot"><div class="date-control"><label for="date">观察日期</label><input id="date" type="date" value="2026-10-24" min="2000-01-01" max="2100-12-31"/></div><span class="elevation">太阳高度 <output id="altitude">—</output></span><span class="gesture">拖动时间，感受不同的海口</span></div>
+    </section>
+    <footer class="chrome"><span>AN EXPLORATION BY ZEN</span><span>建筑光影习作 <i></i> 2026</span></footer>
+    <button id="restore" hidden>返回控制界面 <span aria-hidden="true">↗</span></button>
+    <dialog id="info"><button id="close-info" aria-label="关闭介绍">×</button><p class="eyebrow">ABOUT THIS OBSERVATION</p><h2>一座桥，<br>一天的光。</h2><p>我是 Zen，正在学习用 AI 创造一些美好的东西。这次，我想留住海口世纪大桥在不同时刻的样子。</p><p>双钻石形主塔、176 根拉索和桥面在 Blender 中重新建模。拖动时间，太阳位置随海口的经纬度与日期改变，桥身、海水和倒影一起回应。</p><p class="fine">这是基于公开照片的视觉习作。桥梁朝向与岸线经过简化，天空、海况和夜景灯光作了艺术处理；并非测绘模型或实测天气。</p><a href="https://commons.wikimedia.org/wiki/File:Haikou_Century_Bridge_from_southwest_shore_01.jpg" target="_blank" rel="noreferrer">建模参考 · Anna Frodesiak / CC0 ↗</a><a href="https://github.com/zengzixiang849-collab/zen-stillwater/tree/main/projects/century-light" target="_blank" rel="noreferrer">查看制作过程与源文件 ↗</a><span class="signature">Zen.</span></dialog>
+  </main>
+  <noscript><style>#loading{display:none}</style><p class="noscript">请启用 JavaScript 以调整时间与观看三维光影。</p></noscript>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

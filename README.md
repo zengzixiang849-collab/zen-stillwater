@@ -1,5 +1,10 @@
 # Zen. — Learning through making
 
-A restored and personalized static portfolio experiment with an interactive WebGL lake, time-of-day controls, ambient interaction sounds, and an official preview of “Calme” by Ever So Blue.
+Zen's interactive portfolio and learning archive.
 
-The deployable static site is in `dist/`. Site identity and hosting configuration live in `.openai/hosting.json`.
+## Live experiences
+
+- Stillwater: https://zengzixiang849-collab.github.io/zen-stillwater/
+- Century Light: https://zengzixiang849-collab.github.io/zen-stillwater/century-bridge/
+
+The deployable static site is in `dist/`. Century Light source, Blender scene and reproducible model builder live in `projects/century-light/`. Site identity and hosting configuration live in `.openai/hosting.json`.

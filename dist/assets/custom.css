@@ -11,7 +11,60 @@
   opacity: 1;
 }
 
+.century-entry {
+  position: fixed;
+  z-index: 7;
+  left: 50%;
+  bottom: 35px;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 20px;
+  align-items: end;
+  color: #eee9d7;
+  text-decoration: none;
+  text-shadow: 0 2px 18px #071519;
+  transition: opacity .25s, transform .25s;
+}
+
+.century-entry span {
+  grid-column: 1 / -1;
+  margin-bottom: 7px;
+  font: 7px var(--sans);
+  letter-spacing: 2px;
+  opacity: .55;
+}
+
+.century-entry strong {
+  font: 18px "Noto Serif SC", serif;
+  letter-spacing: 2px;
+}
+
+.century-entry i {
+  font: 15px var(--sans);
+  opacity: .65;
+}
+
+.century-entry:hover,
+.century-entry:focus-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-3px);
+}
+
+.century-entry:focus-visible {
+  outline: 1px solid #eee9d799;
+  outline-offset: 8px;
+}
+
 @media (max-width: 700px) {
+  .century-entry {
+    bottom: 85px;
+  }
+
+  .century-entry strong {
+    font-size: 16px;
+  }
+
   .side-nav {
     top: 51%;
   }

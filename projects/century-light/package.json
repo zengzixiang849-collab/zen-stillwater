@@ -1,0 +1,1 @@
+{"name":"century-light","version":"1.0.0","private":true,"type":"module","scripts":{"dev":"vite --host 127.0.0.1 --port 4175","build":"vite build","preview":"vite preview --host 127.0.0.1 --port 4175"},"dependencies":{"three":"0.180.0","suncalc":"1.9.0","gsap":"3.13.0"},"devDependencies":{"vite":"7.1.7"}}
